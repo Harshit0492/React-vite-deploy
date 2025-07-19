@@ -927,61 +927,56 @@ const ProjectDetail: React.FC = () => {
 
             {/* Logo Grid */}
             <Box
-              sx={{
-                display: "flex",
-                justifyContent: { xs: "center", sm: "start", md: "start" },
-                gap: { xs: 4, sm: 2.5, md: 10 },
-                rowGap: {
-                  xs: 6,
-                  sm: 8,
-                  md: 10,
-                },
-                flexWrap: "wrap",
-                maxWidth: "1226px",
-              }}
-            >
-              {[
-                "src/assets/image/logo1.png",
-                "src/assets/image/logo2.png",
-                "src/assets/image/logo3.jpeg",
-                "src/assets/image/logo4.png",
-                "src/assets/image/logo5.jpeg",
-                "src/assets/image/logo6.png",
-              ].map((logo, index) => (
-                <Box
-                  key={index}
-                  item
-                  xs={12}
-                  sm={4}
-                  md={4}
-                  sx={{
-                    display: "flex",
-                    justifyContent: "start",
-                    alignItems: "flex-start",
-                  }}
-                >
-                  <Box
-                    component="img"
-                    src={logo}
-                    alt={`Industry Logo ${index + 1}`}
-                    sx={{
-                      width: {
-                        xs: "179.77px",
-                        sm: "179.77px",
-                        md: "341.17px",
-                      },
-                      height: {
-                        xs: "87.69px",
-                        sm: "87.69px",
-                        md: "166.43px",
-                      },
-                      objectFit: "contain",
-                      mixBlendMode: "multiply",
-                    }}
-                  />
-                </Box>
-              ))}
-            </Box>
+  sx={{
+    display: "flex",
+    justifyContent: { xs: "center", sm: "start", md: "start" },
+    gap: { xs: 4, sm: 2.5, md: 10 },
+    rowGap: { xs: 6, sm: 8, md: 10 },
+    flexWrap: "wrap",
+    maxWidth: "1226px",
+  }}
+>
+  {[
+    "src/assets/image/logo1.png",
+    "src/assets/image/logo2.png",
+    "src/assets/image/logo3.jpeg",
+    "src/assets/image/logo4.png",
+    "src/assets/image/logo5.jpeg",
+    "src/assets/image/logo6.png",
+  ].map((logo, index) => (
+    <Box
+      key={index}
+      sx={{
+        display: "flex",
+        justifyContent: "start",
+        alignItems: "flex-start",
+        width: {
+          xs: "179.77px",
+          sm: "179.77px",
+          md: "341.17px",
+        },
+        height: {
+          xs: "87.69px",
+          sm: "87.69px",
+          md: "166.43px",
+        },
+      }}
+    >
+      <Box
+        component="img"
+        src={logo}
+        alt={`Industry Logo ${index + 1}`}
+        sx={{
+          width: "100%",
+          height: "100%",
+          objectFit: "contain",
+          mixBlendMode: "multiply",
+        }}
+      />
+    </Box>
+  ))}
+</Box>
+
           </Container>
         </Box>
 

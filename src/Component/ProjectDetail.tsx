@@ -144,7 +144,7 @@ const ProjectDetail: React.FC = () => {
             {/* Image */}
             <Box
               component="img"
-              src="src\assets\image\pyush-anand 1 (1).png" // Replace with your actual image path
+              src="public/images/pyush-anand 1 (1).png" // Replace with your actual image path
               alt="Pyush Anand"
               sx={{
                 width: "100%",
@@ -555,7 +555,7 @@ const ProjectDetail: React.FC = () => {
                   underline="none"
                   sx={{
                     fontWeight: 700,
-                    color: "#15203A",
+                    color: "blue",
                     ":hover": { textDecoration: "underline" },
                   }}
                 >
@@ -622,12 +622,12 @@ const ProjectDetail: React.FC = () => {
                 }}
               >
                 <img
-                  src="src\assets\image\Rectangle 4.png"
+                  src="public/images/Rectangle 3.png"
                   alt="Case Study UX"
                   style={{
                     width: "100%",
-                    maxWidth: "450px",
-                    height: "301px",
+                    maxWidth: "1245px",
+                    height: "473px",
                     borderRadius: "10px",
                   }}
                 />
@@ -685,7 +685,7 @@ const ProjectDetail: React.FC = () => {
               >
                 <Box
                   component="img"
-                  src="src\assets\image\Rectangle 3.png"
+                  src="public/images/Rectangle 3.png"
                   alt="Case Study UX"
                   style={{
                     width: "100%",
@@ -882,7 +882,7 @@ const ProjectDetail: React.FC = () => {
                   }}
                 >
                   <img
-                    src="src/assets/image/Certificateofcompletion-2-e1542503069490.jpg"
+                    src="public/images/Certificateofcompletion-2-e1542503069490.jpg"
                     alt={`Certificate ${index}`}
                     style={{
                       width: "100%",
@@ -937,12 +937,12 @@ const ProjectDetail: React.FC = () => {
   }}
 >
   {[
-    "src/assets/image/logo1.png",
-    "src/assets/image/logo2.png",
-    "src/assets/image/logo3.jpeg",
-    "src/assets/image/logo4.png",
-    "src/assets/image/logo5.jpeg",
-    "src/assets/image/logo6.png",
+    "public/images/logo1.png",
+    "public/images/logo2.png",
+    "public/images/logo3.jpeg",
+    "public/images/logo4.png",
+    "public/images/logo5.jpeg",
+    "public/images/logo6.png",
   ].map((logo, index) => (
     <Box
       key={index}

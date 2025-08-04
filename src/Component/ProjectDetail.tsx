@@ -144,7 +144,7 @@ const ProjectDetail: React.FC = () => {
             {/* Image */}
             <Box
               component="img"
-              src="public/images/pyush-anand 1 (1).png" // Replace with your actual image path
+              src="/images/pyush-anand 1 (1).png" // Replace with your actual image path
               alt="Pyush Anand"
               sx={{
                 width: "100%",
@@ -622,7 +622,7 @@ const ProjectDetail: React.FC = () => {
                 }}
               >
                 <img
-                  src="public/images/Rectangle 3.png"
+                  src="/images/Rectangle 3.png"
                   alt="Case Study UX"
                   style={{
                     width: "100%",
@@ -685,7 +685,7 @@ const ProjectDetail: React.FC = () => {
               >
                 <Box
                   component="img"
-                  src="public/images/Rectangle 3.png"
+                  src="/images/Rectangle 3.png"
                   alt="Case Study UX"
                   style={{
                     width: "100%",
@@ -882,7 +882,7 @@ const ProjectDetail: React.FC = () => {
                   }}
                 >
                   <img
-                    src="public/images/Certificateofcompletion-2-e1542503069490.jpg"
+                    src="/images/Certificateofcompletion-2-e1542503069490.jpg"
                     alt={`Certificate ${index}`}
                     style={{
                       width: "100%",
@@ -937,12 +937,12 @@ const ProjectDetail: React.FC = () => {
   }}
 >
   {[
-    "public/images/logo1.png",
-    "public/images/logo2.png",
-    "public/images/logo3.jpeg",
-    "public/images/logo4.png",
-    "public/images/logo5.jpeg",
-    "public/images/logo6.png",
+    "/images/logo1.png",
+    "/images/logo2.png",
+    "/images/logo3.jpeg",
+    "/images/logo4.png",
+    "/images/logo5.jpeg",
+    "/images/logo6.png",
   ].map((logo, index) => (
     <Box
       key={index}
